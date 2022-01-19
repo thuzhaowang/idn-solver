@@ -1,0 +1,21 @@
+cfg_name: "folder_mvdnet"
+reference_gap: 20
+
+# model related
+input_size: [480,640]
+model_name: 'MVDNet_conf'
+ndepth: 64
+mindepth: 0.5
+maxdepth: 10.0
+conf_dgamma: 5.0
+conf_ngamma: 5.0
+check_offsets: [1,3,5,10]
+solver_alpha1: 1.0
+solver_alpha2: 1.0
+solver_sigma1: 50.0
+solver_sigma2: 5.0
+refine_iter: 10 # iterations of solver
+pretrained_mvdn: "./pretrain/checkpoint.pth.tar"
+
+
+
